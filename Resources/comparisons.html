@@ -1,9 +1,9 @@
-<!--This is the Landing Page - Page 1 of 7-->
+<!--This is the Comparisons Page - Page 6 of 7-->
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
-    <title>Latitude Landing Page</title>
+    <title>Comparisons Page</title>
 
     <!-- Bring in Bootstrap Stylesheet-->
     <link
@@ -23,6 +23,14 @@
         font-size: 40px;
         /* This will color the heading font: teal. */
         color: rgb(30, 148, 142);
+      }
+      h2 {
+        /* Change the size of your font to 60 pixels high. */
+        font-size: 30px;
+        /* This will color the heading font: teal. */
+        color: rgb(30, 148, 142);
+        /* Align the text to the center of its enclosing element (e.g. div). */
+        text-align: center;
       }
       /* h4 heading tag */
       h4 {
@@ -62,7 +70,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href=".\index3.html" class="navbar-brand btn-primary btn-border-round"
+          <a href="..\index3.html" class="navbar-brand btn-primary btn-border-round"
             ><h4>Latitude</h4>
           </a>
         </div>
@@ -83,22 +91,22 @@
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
-                <li><a href=".\Resources\max-temperature.html">Max Temperature</a></li>
-                <li><a href=".\Resources\humidity.html">Humidity</a></li>
-                <li><a href=".\Resources\cloudiness.html">Cloudiness</a></li>
-                <li><a href=".\Resources\windspeed.html">Windspeed</a></li>
+                <li><a href="..\Resources\max-temperature.html">Max Temperature</a></li>
+                <li><a href="..\Resources\humidity.html">Humidity</a></li>
+                <li><a href="..\Resources\cloudiness.html">Cloudiness</a></li>
+                <li><a href="..\Resources\windspeed.html">Windspeed</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href=".\Resources\data.html">"Data-Link"</a></li>
+                <li><a href="..\Resources\data.html">"Data-Separated Link"</a></li>
               </ul>
             </li>
             <li class="active">
-              <a href=".\Resources\comparisons.html">
+              <a href="..\Resources\comparisons.html">
                 Comparisons
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="active">
-              <a href=".\Resources\data.html">
+              <a href="..\Resources\data.html">
                 Data
                 <span class="sr-only">(current)</span>
               </a>
@@ -112,74 +120,39 @@
 
     <!-- This section represents the body contents of the page -->
     <!-- Creates the Overall Grid - rows function in containers; columns are in rows -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-sm-12">
-                <h1><strong>Summary: Latitude vs. X</strong></h1>
-                    <img class="pull-left"
-                    src="Resources/assets/images/Fig1.png"
-                    alt="Main Visualization"
-                    height="300"
-                    width="300"
-                    >
-                <h3>
-                  <br>
-                  <p>
-                    The purpose of this project was to analyze how weather changes
-                    as you get closer to the equator. To accomplish this analysis,
-                    we first pulled data from the OpenWeatherMap API to assemble a
-                    dataset on over 500 cities.
-                  </p>
-                  <br>
-                  <p>
-                    After assembling the dataset, we used Matplotlib to plot various
-                    aspects of the w eather vs. latitiude. Factors we looked at
-                    included: temperature, cloudiness, wind speed, and humidity.
-                    This site provides the source data and visualizations created as
-                    part of the analysis, as well as explanations and descriptions
-                    of any trends and correlations witnessed.
-                  </p>
-                </h3>
-            </div>
-
-            <!--Visualization Images-->
-            <div class="col-md-4 col-sm-12">
-                <h1><strong>Visualizations</strong></h1>
-                  <div class="row">
-                    <div class="col-md-6 col-sm-3">
-                      <a href=".\Resources\max-temperature.html">
-                          <img src=".\Resources\assets\Images\Fig1.png"
-                          alt="Latitude vs. Max Temperature"
-                          height="190"
-                          width="190"
-                          >
-                      </a>
+    <body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <h1><strong>Comparison: Lattitude vs X</strong></h1>
+                        <p> click any plot to get an in-depth analysis. </p>
                     </div>
-                    <div class="col-md-6 col-sm-3">
-                      <a href=".\Resources\humidity.html">
-                          <img src=".\Resources\assets\images\Fig2.png"
-                          alt="Latitude vs. Max Temperature"
-                          height="190"
-                          width="190"
-                          >
-                      </a>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2><strong>vs. Max Temperature</strong></h2>
+                        <a href="..\Resources\max-temperature.html">
+                            <img src=".\assets\images\Fig1.png">
+                        </a>
                     </div>
-                    <div class="col-md-6 col-sm-3">
-                      <a href=".\Resources\cloudiness.html">
-                          <img src=".\Resources\assets\images\Fig3.png"
-                          alt="Latitude vs. Max Temperature"
-                          height="190"
-                          width="190"
-                          >
-                      </a>
+                    <div class="col-md-6 col-sm-12">
+                        <h2><strong>vs. Humidity</strong></h2>
+                        <a href="..\Resources\humidity.html">
+                            <img src=".\assets\images\Fig2.png">
+                        </a>
                     </div>
-                    <div class="col-md-6 col-sm-3">
-                      <a href=".\Resources\windspeed.html">
-                          <img src=".\Resources\assets\images\Fig4.png"
-                          alt="Latitude vs. Max Temperature"
-                          height="190"
-                          width="190"
-                          >
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2><strong>vs. Cloudiness</strong></h2>
+                        <a href="..\Resources\cloudiness.html">
+                            <img src=".\assets\images\Fig3.png">
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h2><strong>vs. Wind Speed</strong></h3>
+                        <a href="..\Resources\windspeed.html">
+                            <img src=".\assets\images\Fig4.png">
                       </a>
                     </div>
                   </div>
